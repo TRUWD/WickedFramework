@@ -1,4 +1,11 @@
 WickedFramework
 ===============
 
-A totally wicked, lightweight responsive CSS framework.
+A lightweight, fast & responsive CSS framework that's totally wicked.
+
+* Flexible grid system that fits any device
+* Super fast and easy to  use
+* Tested in IE7+, Firefox, Chrome and Safari
+* Optional extensions
+
+Visit http://www.kimlarocca.com/playground/WickedFramework/ for a working demo!
