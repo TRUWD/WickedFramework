@@ -1,0 +1,323 @@
+/**
+* Wicked Framework
+* ----------------- 
+* Copyright 2014 KimLaRocca.com
+* Licensed under MIT (https://github.com/kimlarocca/WickedFramework/blob/master/LICENSE)
+**/
+
+/* demo page styles */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	color: #333;
+	text-rendering: optimizeLegibility;
+}
+a, a:visited, a:active {
+	text-decoration: none;
+}
+a img {
+	border: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* container styles */
+.wf_container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+/* responsive grids */
+.wf_row {
+	display: table;
+	width: 100%;
+}
+.wf_column {
+	display: table-cell;
+	vertical-align: top;
+	padding-left: 1%;
+	padding-right: 1%;
+	*margin-right:-5px; /* hack for IE7 and below */
+	*float:left; /* hack for IE7 and below */
+}
+.wf_column img {
+	max-width: 100%;
+	height: auto;
+}
+.wf_one {
+	width: 100%;
+}
+.wf_two {
+	width: 48%;
+}
+.wf_three {
+	width: 31%;
+}
+.wf_threeCenter {
+	width: 32%;
+}
+.wf_four {
+	width: 23%;
+}
+.wf_five {
+	width: 19%;
+}
+.wf_six {
+	width: 16%;
+}
+.wf_twoThirds1 {
+	width: 32%;
+}
+.wf_twoThirds2 {
+	width: 64%;
+}
+.wf_oneQuarter1 {
+	width: 23%;
+}
+.wf_oneQuarter2 {
+	width: 73%;
+}
+.wf_quad {
+	width: 23%;
+}
+/* common styles */
+.wf_hideOnMobile {
+	display: block;
+}
+.wf_hideOnDesktop, .wf_hideColumnOnDesktop {
+	display: none;
+}
+.wf_hideColumnOnMobile {
+	display: table-cell;
+}
+.wf_hr {
+	height: 1px;
+	box-shadow: inset 0 -1px 0 #ccc;
+	border-top: solid 1px #ccc\9; /* hack for IE8 and below */
+}
+.wf_float_left {
+	float: left;
+}
+.wf_float_right {
+	float: right;
+}
+.wf_clearfloat {
+	width: 100%;
+	clear: left;
+}
+.wf_hide {
+	display: none;
+}
+.wf_show {
+	display: block;
+}
+.wf_padding0 {
+	padding: 0;
+}
+.wf_margin0 {
+	margin: 0;
+}
+.wf_margin5 {
+	margin-bottom: 5px;
+}
+.wf_margin10 {
+	margin-bottom: 10px;
+}
+.wf_margin15 {
+	margin-bottom: 15px;
+}
+.wf_margin20 {
+	margin-bottom: 20px;
+}
+.wf_margin25 {
+	margin-bottom: 25px;
+}
+.wf_margin30 {
+	margin-bottom: 30px;
+}
+.wf_margin35 {
+	margin-bottom: 35px;
+}
+.wf_margin40 {
+	margin-bottom: 40px;
+}
+.wf_margin45 {
+	margin-bottom: 45px;
+}
+.wf_margin50 {
+	margin-bottom: 50px;
+}
+.wf_text_left {
+	text-align: left;
+}
+.wf_text_right {
+	text-align: right;
+}
+.wf_text_center {
+	text-align: center;
+}
+.wf_text_justify {
+	text-align: justify;
+}
+.wf_text_centeredOnMobile {
+	text-align: left;
+}
+.wf_centered {
+	margin: auto;
+	text-align: center;
+}
+/* default text & header styles */
+.wf_container p {
+	color: #333;
+	font-size: 14px;
+}
+.wf_container h1, .wf_container h2, .wf_container h3, .wf_container h4, .wf_container h5, .wf_container h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #333;
+}
+.wf_container h1 {
+	font-size: 2.8em;
+}
+.wf_container h2 {
+	font-size: 2.3em;
+}
+.wf_container h3 {
+	font-size: 1.8em;
+}
+.wf_container h4 {
+	font-size: 1.6em;
+}
+.wf_container h5 {
+	font-size: 1.4em;
+}
+.wf_container h6 {
+	font-size: 1.2em;
+}
+.wf_footer_text {
+	font-size: 12px;
+}
+
+/* tablet styles */
+@media screen and (max-width : 768px) {
+.wf_container p {
+	font-size: .9em;
+}
+.wf_container h1 {
+	font-size: 2.6em;
+}
+.wf_container h2 {
+	font-size: 2.1em;
+}
+.wf_container h3 {
+	font-size: 1.6em;
+}
+.wf_container h4 {
+	font-size: 1.4em;
+}
+.wf_container h5 {
+	font-size: 1.1em;
+}
+.wf_container h6 {
+	font-size: .9em;
+}
+}
+
+/* mobile styles */
+@media screen and (max-width : 480px) {
+.wf_hideOnDesktop {
+	display: block;
+}
+.wf_hideOnMobile, .wf_hideColumnOnMobile {
+	display: none;
+}
+.wf_hideColumnOnDesktop {
+	display: table-cell;
+}
+.wf_container {
+	max-width: 100%;
+	width: 100%;
+}
+.wf_container p {
+	font-size: .8em;
+}
+.wf_float_noneOnMobile {
+	float: none;
+}
+.wf_text_centeredOnMobile {
+	text-align: center;
+}
+.wf_container h1 {
+	font-size: 2.4em;
+}
+.wf_container h2 {
+	font-size: 1.9em;
+}
+.wf_container h3 {
+	font-size: 1.4em;
+}
+.wf_container h4 {
+	font-size: 1.3em;
+}
+.wf_container h5 {
+	font-size: .9em;
+}
+.wf_container h6 {
+	font-size: .8em;
+}
+.wf_bringToTop {
+	display: table-caption;
+}
+.wf_column {
+	float: left;
+	padding: 0;
+}
+.wf_two, .wf_three, .wf_threeCenter, .wf_four, .wf_five, .wf_twoThirds1, .wf_twoThirds2, .wf_oneQuarter1, .wf_oneQuarter2 {
+	width: 100%;
+}
+.wf_quad {
+	width: 50%;
+	float: left;
+}
+.wf_six {
+	width: 50%;
+	float: left;
+}
+/* stacking order */
+/* supports 2 but can easily be extended */
+.wf_order {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	/* optional */
+	-webkit-box-align: start;
+	-moz-box-align: start;
+	-ms-flex-align: start;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+}
+.wf_order .wf_order2 {
+	-webkit-box-ordinal-group: 2;
+	-moz-box-ordinal-group: 2;
+	-ms-flex-order: 2;
+	-webkit-order: 2;
+	order: 2;
+}
+.wf_order .wf_order1 {
+	-webkit-box-ordinal-group: 1;
+	-moz-box-ordinal-group: 1;
+	-ms-flex-order: 1;
+	-webkit-order: 1;
+	order: 1;
+}
+}
