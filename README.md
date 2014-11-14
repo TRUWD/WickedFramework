@@ -8,4 +8,4 @@ A lightweight, fast & responsive CSS framework that's totally wicked.
 * Tested in IE7+, Firefox, Chrome and Safari
 * Optional extensions
 
-Visit http://www.kimlarocca.com/playground/WickedFramework/ for a working demo!
+Visit http://www.WickedFramework.com for a working demo, layouts and more info.
