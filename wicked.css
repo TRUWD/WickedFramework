@@ -4,44 +4,41 @@
 * Copyright 2014 KimLaRocca.com
 * Licensed under MIT (https://github.com/kimlarocca/WickedFramework/blob/master/LICENSE)
 **/
-
-/* demo page styles */
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
+.wf_container {
+	width: 100%;
+	max-width: 963px;
+	margin: 0 auto;
+	padding: 0;
+	font-family: Arial, sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	color: #333;
 	text-rendering: optimizeLegibility;
 }
-a, a:visited, a:active {
+.wf_container a, .wf_container a:visited, .wf_container a:active {
 	text-decoration: none;
 }
-a img {
+.wf_container a img {
 	border: 0;
 }
-img {
+.wf_container img {
 	max-width: 100%;
 	height: auto;
 }
-/* container styles */
-.wf_container {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-/* responsive grids */
+/**/
+/* responsive columns */
 .wf_row {
 	display: table;
 	width: 100%;
+	max-width: 963px;
 }
 .wf_column {
 	display: table-cell;
-	vertical-align: top;
+	vertical-align:top;
 	padding-left: 1%;
 	padding-right: 1%;
-	*margin-right:-5px; /* hack for IE7 and below */
-	*float:left; /* hack for IE7 and below */
+	*margin-right:-5px; /* IE7 and below */
+	*float:left; /* IE7 and below */
 }
 .wf_column img {
 	max-width: 100%;
@@ -83,21 +80,39 @@ img {
 .wf_quad {
 	width: 23%;
 }
-/* common styles */
-.wf_hideOnMobile {
-	display: block;
+/**/
+/* vertical dividers for columns */
+/* fyi: equal height columns not supported in IE7 */
+.wf_vr {
+	box-shadow: inset -1px 0 0 #ccc;
+	border-right: solid 1px #ccc\9; /* IE8 and below */
+	padding-right:15px\9; /* IE8 and below */
 }
-.wf_hideOnDesktop, .wf_hideColumnOnDesktop {
-	display: none;
+/* the following transform to horizontal dividers on mobile */
+.wf_vr_right, .wf_vr_right_hideOnMobile {
+	box-shadow: inset -1px 0 0 #ccc;
+	border-right: solid 1px #ccc\9; /* IE8 and below */
+	padding-right:15px\9; /* IE8 and below */
 }
-.wf_hideColumnOnMobile {
-	display: table-cell;
+.wf_vr_left, .wf_vr_left_hideOnMobile {
+	box-shadow: inset 1px 0 0 #ccc;
+	border-left: solid 1px #ccc\9; /* IE8 and below */
+	padding-left:15px\9; /* IE8 and below */
 }
+.wf_vr_both {
+	box-shadow: 0 0px 0px 0px white, 0 0px 0px 0px white, 1px 0 0 #ccc, -1px 0 0 #ccc;
+	border-left: solid 1px #ccc\9; /* IE8 and below */
+	border-right: solid 1px #ccc\9; /* IE8 and below */
+	padding-right:15px\9; /* IE8 and below */
+	padding-left:150px\9; /* IE8 and below */
+}
+/* horizontal divider */
 .wf_hr {
 	height: 1px;
 	box-shadow: inset 0 -1px 0 #ccc;
-	border-top: solid 1px #ccc\9; /* hack for IE8 and below */
+	border-top: solid 1px #ccc\9; /* IE8 and below */
 }
+/* common styles */
 .wf_float_left {
 	float: left;
 }
@@ -151,131 +166,189 @@ img {
 	margin-bottom: 50px;
 }
 .wf_text_left {
-	text-align: left;
+	text-align: left!important;
 }
 .wf_text_right {
-	text-align: right;
+	text-align: right!important;
 }
 .wf_text_center {
-	text-align: center;
+	text-align: center!important;
 }
 .wf_text_justify {
-	text-align: justify;
+	text-align: justify!important;
 }
 .wf_text_centeredOnMobile {
-	text-align: left;
-}
-.wf_centered {
-	margin: auto;
-	text-align: center;
-}
-/* default text & header styles */
-.wf_container p {
-	color: #333;
-	font-size: 14px;
-}
-.wf_container h1, .wf_container h2, .wf_container h3, .wf_container h4, .wf_container h5, .wf_container h6 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	color: #333;
-}
-.wf_container h1 {
-	font-size: 2.8em;
-}
-.wf_container h2 {
-	font-size: 2.3em;
-}
-.wf_container h3 {
-	font-size: 1.8em;
-}
-.wf_container h4 {
-	font-size: 1.6em;
-}
-.wf_container h5 {
-	font-size: 1.4em;
-}
-.wf_container h6 {
-	font-size: 1.2em;
+	text-align: left!important;
 }
 .wf_footer_text {
 	font-size: 12px;
 }
-
-/* tablet styles */
-@media screen and (max-width : 768px) {
-.wf_container p {
-	font-size: .9em;
+.wf_centered {
+	margin: auto;
+	text-align: center!important;
 }
-.wf_container h1 {
-	font-size: 2.6em;
+/* default paragraph styles */
+.wf_p {
+	color: #333;
+	font-size: 16px;
+	line-height: 1.2;
 }
-.wf_container h2 {
-	font-size: 2.1em;
+/* default header styles */
+.wf_h1, .wf_h2, .wf_h3, .wf_h4, .wf_h5, .wf_h6 {
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #333;
 }
-.wf_container h3 {
-	font-size: 1.6em;
+.wf_h1 a, .wf_h2 a, .wf_h3 a, .wf_h4 a, .wf_h5 a, .wf_h6 a {
+	font-weight: inherit;
 }
-.wf_container h4 {
-	font-size: 1.4em;
+.wf_h1 {
+	font-size: 2.8em;
 }
-.wf_container h5 {
-	font-size: 1.1em;
+.wf_h2 {
+	font-size: 2.3em;
 }
-.wf_container h6 {
-	font-size: .9em;
+.wf_h3 {
+	font-size: 2.0em;
 }
+.wf_h4 {
+	font-size: 1.8em;
 }
-
-/* mobile styles */
-@media screen and (max-width : 480px) {
-.wf_hideOnDesktop {
+.wf_h5 {
+	font-size: 1.5em;
+}
+.wf_h6 {
+	font-size: 1.2em;
+}
+/* hide and show styles */
+.wf_showOnDesktop {
 	display: block;
 }
-.wf_hideOnMobile, .wf_hideColumnOnMobile {
-	display: none;
+.wf_showColumnOnDesktop {
+	display:table-cell;
 }
-.wf_hideColumnOnDesktop {
+.wf_hideOnMobile, .wf_hideOnTablet {
+	display: block;
+}
+.wf_hideColumnOnMobile, .wf_hideColumnOnTablet {
 	display: table-cell;
 }
+.wf_hideOnDesktop, .wf_hideColumnOnDesktop {
+	display: none;
+}
+/* tablet styles */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+.wf_p, .wf_seo {
+	font-size: 15px;
+}
+.wf_h1 {
+	font-size: 2.6em;
+}
+.wf_h2 {
+	font-size: 2.1em;
+}
+.wf_h3 {
+	font-size: 1.8em;
+}
+.wf_h4 {
+	font-size: 1.6em;
+}
+.wf_h5 {
+	font-size: 1.3em;
+}
+.wf_h6 {
+	font-size: 1.0em;
+}
+.wf_text_centeredOnTablet {
+	text-align: center!important;
+}
+/* hide and show styles */
+.wf_hideOnMobile, .wf_hideOnDesktop {
+	display: block;
+}
+.wf_hideColumnOnMobile, .wf_hideColumnOnDesktop {
+	display: table-cell;
+}
+.wf_showOnDesktop, .wf_showColumnOnDesktop {
+	display: none;
+}
+.wf_hideOnTablet, .wf_hideColumnOnTablet {
+	display: none;
+}
+}
+/**/
+/* mobile styles */
+@media screen and (max-width : 480px) {
+#scrollToTop { display:none; } /* hide the scroll to top button */
 .wf_container {
 	max-width: 100%;
 	width: 100%;
 }
-.wf_container p {
-	font-size: .8em;
+.wf_p, .wf_seo {
+	font-size: 14px;
+	margin: 0;
+	padding: 1%;
 }
 .wf_float_noneOnMobile {
-	float: none;
+	float:none;
 }
 .wf_text_centeredOnMobile {
-	text-align: center;
+	text-align: center!important; margin:auto;
 }
-.wf_container h1 {
+.wf_h1 {
 	font-size: 2.4em;
 }
-.wf_container h2 {
+.wf_h2 {
 	font-size: 1.9em;
 }
-.wf_container h3 {
+.wf_h3 {
+	font-size: 1.6em;
+}
+.wf_h4 {
 	font-size: 1.4em;
 }
-.wf_container h4 {
-	font-size: 1.3em;
+.wf_h5 {
+	font-size: 1.1em;
 }
-.wf_container h5 {
-	font-size: .9em;
-}
-.wf_container h6 {
+.wf_h6 {
 	font-size: .8em;
 }
 .wf_bringToTop {
 	display: table-caption;
 }
-.wf_column {
-	float: left;
-	padding: 0;
+.wf_arrow_content {
+	line-height: normal;
 }
-.wf_two, .wf_three, .wf_threeCenter, .wf_four, .wf_five, .wf_twoThirds1, .wf_twoThirds2, .wf_oneQuarter1, .wf_oneQuarter2 {
+.wf_vr_right_hideOnMobile, .wf_vr_lef t_hideOnMobile {
+	box-shadow: none;
+}
+.wf_vr_right {
+	box-shadow: inset 0 -1px 0 #ccc;
+	margin-bottom: 10px;
+}
+.wf_vr_left {
+	box-shadow: inset 0 1px 0 #ccc;
+	margin-bottom: 10px;
+}
+.wf_quad.wf_vr_right:nth-child(1n) {
+	box-shadow: inset -1px -1px 0 #ccc;
+	margin-bottom: 0;
+}
+.wf_quad.wf_vr_right:nth-child(2n) {
+	box-shadow: inset 0 -1px 0 #ccc;
+	margin-bottom: 0;
+}
+.wf_quad.wf_vr_right:nth-child(3n) {
+	box-shadow: inset -1px 0 0 #ccc;
+}
+.wf_quad.wf_vr_right:nth-child(4n) {
+	box-shadow: none;
+}
+.wf_column {
+	float: left; padding:0;
+}
+.wf_two, .wf_three, .wf_threeCenter, .wf_threeCustom, .wf_threeCustomDivider, .wf_four, .wf_five, .wf_twoThirds1, .wf_twoThirds2, .wf_oneQuarter1, .wf_oneQuarter2 {
 	width: 100%;
 }
 .wf_quad {
@@ -286,8 +359,8 @@ img {
 	width: 50%;
 	float: left;
 }
+/**/
 /* stacking order */
-/* supports 2 but can easily be extended */
 .wf_order {
 	display: -webkit-box;
 	display: -moz-box;
@@ -319,5 +392,19 @@ img {
 	-ms-flex-order: 1;
 	-webkit-order: 1;
 	order: 1;
+}
+/**/
+/* hide and show styles */
+.wf_showOnDesktop, .wf_showColumnOnDesktop {
+	display: none;
+}
+.wf_hideOnTablet, .wf_hideOnDesktop {
+	display: block;
+}
+.wf_hideColumnOnTablet, .wf_hideColumnOnDesktop {
+	display: table-cell;
+}
+.wf_hideOnMobile, .wf_hideColumnOnMobile {
+	display: none;
 }
 }
