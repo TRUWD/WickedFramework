@@ -1,0 +1,72 @@
+/**
+* Wicked Framework
+* ----------------- 
+* Copyright 2014 KimLaRocca.com
+* Licensed under MIT (https://github.com/kimlarocca/WickedFramework/blob/master/LICENSE)
+* -------------------
+* Extension for responsive data tables
+* -------------------
+* Original code modified from CSS-Tricks.com!
+**/
+.wf_container table {
+	width: 100%;
+	border-collapse: collapse;
+}
+/* Zebra striping */
+.wf_container tr:nth-of-type(odd) {
+	background: #eee;
+}
+.wf_container th {
+	background: #858585;
+	color: white;
+	font-weight: bold;
+}
+.wf_container td, th {
+	padding: 6px;
+	text-align: left;
+}
+@media  only screen and (max-width: 760px),  (min-device-width: 768px) and (max-device-width: 962px) {
+/* Force table to not be like tables anymore */
+.wf_container table, .wf_container thead, .wf_container tbody, .wf_container th, .wf_container td, .wf_container tr {
+	display: block;
+}
+/* Hide table headers (but not display: none;, for accessibility) */
+.wf_container thead tr {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.wf_container tr {
+	border: 1px solid #ccc;
+}
+.wf_container td {
+	/* Behave  like a "row" */
+	border: none;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	padding-left: 50%;
+}
+.wf_container td:before {
+	/* Now like a table header */
+	position: absolute;
+	/* Top/left values mimic padding */
+	top: 6px;
+	left: 6px;
+	width: 45%;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+/* Label the data */
+.wf_container td:nth-of-type(1):before {
+	content: "City";
+}
+.wf_container td:nth-of-type(2):before {
+	content: "Address";
+}
+.wf_container td:nth-of-type(3):before {
+	content: "Phone";
+}
+.wf_container td:nth-of-type(4):before {
+	content: "Hours";
+}
+}
