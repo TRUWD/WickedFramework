@@ -1,6 +1,8 @@
 WickedFramework
 ===============
 
+<img src="http://www.wickedframework.com/images/grids.jpg"/>
+
 A lightweight, fast & responsive CSS framework that's totally wicked.
 
 * Flexible grid system that fits any device
