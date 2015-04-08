@@ -1,13 +1,11 @@
 WickedFramework
 ===============
 
-<img src="http://www.wickedframework.com/images/grids.jpg"/>
-
-A lightweight, fast & responsive CSS framework that's totally wicked.
+A lightweight CSS framework built with flexbox, with graceful degradation for IE9 and IE8.
 
 * Flexible grid system that fits any device
-* Super fast and easy to  use
-* Tested in IE7+, Firefox, Chrome and Safari
+* Super fast and easy to use
+* Tested in all major browsers and devices
 * Optional extensions
 
-Visit http://www.WickedFramework.com for a working demo, layouts and more info.
+Visit http://www.WickedFramework.com for a working demo and more info.
