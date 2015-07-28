@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Starter Page</title>
+<link rel="stylesheet" type="text/css" href="http://www.toysrus.com/include/base64fonts.css" />
+<link rel="stylesheet" type="text/css" href="framework3.css"/>
+</head>
+
+<body>
+
+<!-- cms code --> 
+<script type="text/javascript">
+function loadjscssfile(filename, filetype) {
+	if (filetype=="js") {
+		var fileref=document.createElement('script');
+		fileref.setAttribute("type","text/javascript");
+		fileref.setAttribute("src", filename);
+	} else if (filetype=="css") {
+		var fileref=document.createElement("link");
+		fileref.setAttribute("rel", "stylesheet");
+		fileref.setAttribute("type", "text/css");
+		fileref.setAttribute("href", filename);
+	}
+	
+	if (typeof fileref!="undefined")
+		document.getElementsByTagName("head")[0].appendChild(fileref);
+}
+// LOAD CUSTOM CSS
+loadjscssfile("http://www.toysrus.com/graphics/media/trus/livecode/WebDev/framework3.min.css", "css");
+</script>
+<div id="twd_container" style="margin-top:20px; max-width:963px;"> 
+  <!-- if the browser is IE 9 or below add twd_ie class to the main container --> 
+  <!--[if lt IE 10]>
+  <script>document.getElementById('twd_container').className += ' twd_ie';</script>
+  <![endif]--> 
+  
+  <!-- your code goes here -->
+  <p>hello world!</p>
+  
+</div>
+<!-- end cms code -->
+
+</body>
+</html>
