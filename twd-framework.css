@@ -65,7 +65,7 @@
 /* the following is to fix FF 36 responsive images bug: http://stackoverflow.com/questions/28710379/firefox-flexbox-image-width */
 @-moz-document url-prefix() { 
 .twd_one img, .twd_two img, .twd_three img, .twd_four img, .twd_five img, .twd_six img, .twd_seven img, .twd_eight img, .twd_twoThirds1 img, .twd_twoThirds2 img, .twd_oneQuarter1 img, .twd_oneQuarter2 img {
-max-width:100%; width:100%;
+max-width:100%;
 }
 }
 .twd_twoThirds2 {
