@@ -6,5 +6,3 @@ A lightweight CSS framework built with flexbox, with graceful degradation for IE
 * Flexible grid system that fits any device
 * Super fast and easy to use
 * Tested in all major browsers and devices
-
-Visit http://www.WickedFramework.com for a working demo and more info.
