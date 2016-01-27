@@ -524,9 +524,6 @@ max-width:100%;
 	width: 100%;
 	position: relative
 }
-.twd_paddingStandard {
-	padding: 0 4% 0 4%;
-}
 /* change row direction to column on tablet and mobile */
 .twd_row.twd_changeColumnDirection {
 	flex-direction: column;
@@ -589,9 +586,6 @@ max-width:100%;
 }
 .twd_heroSubheader {
 	margin-left: 0;
-}
-.twd_paddingStandard {
-	padding: 0 4% 0 4%;
 }
 /* change row direction to column */
 .twd_row {
@@ -719,7 +713,7 @@ max-width:100%;
 }
 /* paddings and margins */
 .twd_paddingStandard {
-	padding: 0 2% 0 2%;
+	padding: 0 4% 0 4%;
 }
 .twd_padding0 {
 	padding: 0;
