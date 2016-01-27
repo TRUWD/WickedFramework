@@ -33,7 +33,7 @@
 	height:220px; width:100%; position:relative
 }
 .twd_heroContent {
-	position:absolute;
+	position:absolute; padding: 0 4% 0 4%;
 }
 .twd_heroContent h1 {
 	font-family: 'Archer Light';
@@ -49,6 +49,39 @@
 	font-family: 'Avenir Medium', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.2;
+}
+.hero-promo-slots .col-md-4:hover {
+    cursor: pointer;
+}
+.hero-promo-slots .col-md-4:hover p {
+    color: #009DDB;
+    text-decoration: underline;
+}
+/* HERO PROMO SPOTS */
+.hero-promo-slots {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(255, 255, 255, 0.93);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100vw;
+}
+.hero-promo-slots h2 {
+    font-size: 22px;
+    color: #009DDB;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Archer Medium";
+}
+.hero-promo-slots p {
+	font-family: "Avenir Light";
+    color: #666666;
+    font-size: 13px!important; margin:0;
+}
+.right-border {
+    border-right: 2px solid #ececec;
 }
 /* GRID SYSTEM */
 .twd_row {
@@ -292,46 +325,6 @@ max-width:100%;
 .twd_clearfloat {
 	width: 100%;
 	clear: both;
-}
-/* TYPOGRAPHY */
-#twd_container p, .twd_p {
-	color: #666;
-	font-size: 16px;
-	line-height: 1.2;
-	margin: 10px 0 10px 0;
-}
-.twd_seo {
-	font-size: 1em;
-}
-.twd_legal {
-	font-size: .8em!important;
-}
-.twd_h1, .twd_h2, .twd_h3, .twd_h4, .twd_h5, .twd_h6 {
-	font-weight: normal;
-	font-style: normal; padding:0; margin:0;
-}
-.twd_h1 a, .twd_h2 a, .twd_h3 a, .twd_h4 a, .twd_h5 a, .twd_h6 a {
-	font-weight: inherit;
-}
-.twd_h1 {
-	font-family: 'Archer Light';
-    font-size: 2em;
-}
-.twd_h2 {
-	font-family: 'Archer Medium';
-    font-size: 1.7em;
-}
-.twd_h3 {
-	font-size: 1.5em;
-}
-.twd_h4 {
-	font-size: 1.3em;
-}
-.twd_h5 {
-	font-size: 1.2em;
-}
-.twd_h6 {
-	font-size: 1.1em;
 }
 /* BUTTONS */
 .twd_button_blue {
