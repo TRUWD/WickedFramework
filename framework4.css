@@ -1,6 +1,6 @@
 /**
 * TWD T2 Framework v4 
-* last updated on 1.27.16
+* last updated on 2.2.16
 * -------------------
 **/
 #twd_container {
@@ -276,43 +276,132 @@ max-width:100%;
 }
 /* BUTTONS */
 .twd_button_blue {
-	min-width: 122px;
 	height: 45px; line-height:22px;
 	background-color: #009DDB;
-	color: #fff;
 	font-family: 'Avenir Heavy';
 	font-size: 18px;
 	border: 3px solid #009DDB;
-	cursor: pointer; padding: 0 32px 0 32px;
+	cursor: pointer;
+	color: #fff;
+}
+.twd_button_blue a {
+  	color: #fff;
+	display:block;
+	width:100%;
+	height:100%;
+	padding: 8px 32px 0 32px;
+}
+.twd_button_blue a:hover {
+     color:#079ddb;
 }
 .twd_button_blue2 {
-	min-width: 122px;
 	height: 33px; line-height:18px;
 	background-color: #009DDB;
 	color: #fff;
 	font-family: 'Avenir Heavy';
 	font-size: 16px;
 	border: 3px solid #009DDB;
-	cursor: pointer; padding: 0 20px 0 20px;
+	cursor: pointer;
+}
+.twd_button_blue2 a {
+  	color: #fff;
+	display:block;
+	width:100%;
+	height:100%;
+	padding: 4px 20px 0 20px;
+}
+.twd_button_blue2 a:hover {
+     color:#079ddb;
 }
 .twd_button_blue:hover, .twd_button_blue2:hover {
 	color: #079ddb;
 	background-color: #fff;
 }
+.twd_button_orange {
+	height: 45px; line-height:22px;
+	background-color: #EA7125;
+	font-family: 'Avenir Heavy';
+	font-size: 18px;
+	border: 3px solid #EA7125;
+	cursor: pointer;
+	color: #fff;
+}
+.twd_button_orange a {
+  	color: #fff;
+	display:block;
+	width:100%;
+	height:100%;
+	padding: 8px 32px 0 32px;
+}
+.twd_button_orange a:hover {
+     color:#EA7125;
+}
 .twd_button_orange2 {
-	min-width: 122px;
 	height: 33px;
 	background-color: #EA7125;
 	color: #fff;
 	font-family: 'Avenir Heavy';
 	font-size: 16px;
 	border: 3px solid #EA7125;
-	cursor: pointer; padding: 0 20px 0 20px;
+	cursor: pointer;
+}
+.twd_button_orange2 a {
+  	color: #fff;
+	display:block;
+	width:100%;
+	height:100%;
+	padding: 4px 20px 0 20px;
+}
+.twd_button_orange a:hover, .twd_button_orange2 a:hover {
+     color:#EA7125;
 }
 .twd_button_orange:hover, .twd_button_orange2:hover {
 	color: #EA7125;
 	background-color: #fff;
 }
+.twd_button_purple {
+	height: 45px; line-height:22px;
+	background-color: #5E2D91;
+	font-family: 'Avenir Heavy';
+	font-size: 18px;
+	border: 3px solid #5E2D91;
+	cursor: pointer;
+	color: #fff;
+}
+.twd_button_purple a {
+  	color: #fff;
+	display:block;
+	width:100%;
+	height:100%;
+	padding: 8px 32px 0 32px;
+}
+.twd_button_purple a:hover {
+     color:#5E2D91;
+}
+.twd_button_purple2 {
+	height: 33px; line-height:18px;
+	background-color: #5E2D91;
+	color: #fff;
+	font-family: 'Avenir Heavy';
+	font-size: 16px;
+	border: 3px solid #5E2D91;
+	cursor: pointer;
+}
+.twd_button_purple2 a {
+  	color: #fff;
+	display:block;
+	width:100%;
+	height:100%;
+	padding: 4px 20px 0 20px;
+}
+.twd_button_purple2 a:hover {
+     color:#5E2D91;
+}
+.twd_button_purple:hover, .twd_button_purple2:hover {
+	color: #5E2D91;
+	background-color: #fff;
+}
+
 .twd_textLink {
 	font-family: 'Avenir Heavy';
 	font-size: 20px; padding-right:5px;
@@ -395,6 +484,9 @@ max-width:100%;
 }
 .twd_avenirMedium {
 	font-family: 'Avenir Medium', Arial, sans-serif!important;
+}
+.twd_avenirLight {
+	font-family: 'Avenir Light', Arial, sans-serif!important;
 }
 /* COLORS */
 .twd_blue {
@@ -604,6 +696,11 @@ max-width:100%;
 	-ms-flex-pack: center;
 	-webkit-justify-content: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
 	text-align: center!important;
 }
 #twd_container p, .twd_p {
